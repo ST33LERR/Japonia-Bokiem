@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodzaje nadwozi</title>
+    <link rel="stylesheet" href="/tabela.css">
+    <link rel="stylesheet" href="/roznosci/nadwozia/nadwozia.css">
+    <script src="/tabela.js" defer></script> <!-- Dodanie linku do pliku JavaScript -->
+</head>
+<body>
+    <!-- Nagłówek -->
+    <header>
+      <img src="/logo.webp" alt="Logo Japonia bokiem" class="logo">
+      <h1>JAPONIA BOKIEM</h1>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Strona Główna</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Marki Samochodów</a>
+            <div class="dropdown-content">
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Daihatsu')"><img src="/images/daihatsu-logo.jpg" alt="Daihatsu">Daihatsu</a>
+              <ul class="model-dropdown" id="Daihatsu">
+                <li><a href="brands.html#Daihatsu"><img src="/images/daihatsu-logo.jpg" alt="Daihatsu">Daihatsu Model 1</a></li>
+                <li><a href="brands.html#Daihatsu">Daihatsu Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Honda')"><img src="/images/honda-logo.jpg" alt="Honda">Honda</a>
+              <ul class="model-dropdown" id="Honda">
+                <li><a href="brands.html#Honda">Honda Model 1</a></li>
+                <li><a href="brands.html#Honda">Honda Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Mazda')"><img src="/images/mazda-logo.jpg" alt="Mazda">Mazda</a>
+              <ul class="model-dropdown" id="Mazda">
+                <li><a href="brands.html#Mazda">Mazda Model 1</a></li>
+                <li><a href="brands.html#Mazda">Mazda Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Mitsubishi')"><img src="/images/mitsubishi-logo.jpg" alt="Mitsubishi">Mitsubishi</a>
+              <ul class="model-dropdown" id="Mitsubishi">
+                <li><a href="brands.html#Mitsubishi">Mitsubishi Model 1</a></li>
+                <li><a href="brands.html#Mitsubishi">Mitsubishi Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Nissan')"><img src="/images/nissan-logo.jpg" alt="Nissan">Nissan</a>
+              <ul class="model-dropdown" id="Nissan">
+                <li><a href="/marki/nissan/silvia/silvia.html#Nissan"><img src="/marki/nissan/nissan_logos/silvia-logo.jpg" alt="Silvia logo">Silvia</a></li>
+                <li><a href="brand.html#Nissan"><img src="/marki/nissan/nissan_logos/gt-r-logo.jpg" alt="GTR logo">GT-R</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Suzuki')"><img src="/images/suzuki-logo.jpg" alt="Suzuki">Suzuki</a>
+              <ul class="model-dropdown" id="Suzuki">
+                <li><a href="brands.html#Suzuki">Suzuki Model 1</a></li>
+                <li><a href="brands.html#Suzuki">Suzuki Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Subaru')"><img src="/images/subaru-logo.jpg" alt="Subaru">Subaru</a>
+              <ul class="model-dropdown" id="Subaru">
+                <li><a href="brands.html#Subaru">Subaru Model 1</a></li>
+                <li><a href="brands.html#Subaru">Subaru Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Toyota')"><img src="/images/toyota-logo.jpg" alt="Toyota">Toyota</a>
+              <ul class="model-dropdown" id="Toyota">
+                <li><a href="brands.html#Toyota">Toyota Model 1</a></li>
+                <li><a href="brands.html#Toyota">Toyota Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Lexus')"><img src="/images/lexus-logo.jpg" alt="Lexus">Lexus</a>
+              <ul class="model-dropdown" id="Lexus">
+                <li><a href="brands.html#Lexus">Lexus Model 1</a></li>
+                <li><a href="brands.html#Lexus">Lexus Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Infiniti')"><img src="/images/infiniti-logo.jpg" alt="Infiniti">Infiniti</a>
+              <ul class="model-dropdown" id="Infiniti">
+                <li><a href="brands.html#Infiniti">Infiniti Model 1</a></li>
+                <li><a href="brands.html#Infiniti">Infiniti Model 2</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Główna sekcja -->
+    <main>
+  <section class="car-type">
+    <img src="Ferrari-166-MM.jpg" alt="Ferrari 166 MM">
+    <div class="car-type-content">
+      <h2>Barchetta (barketta)</h2>
+        <p>Brak dachu na stałe, a przednia szyba nie ma górnej ramy i jest mniejsza niż standardowa np. Ferrari 166mm czy Pagani zonda HP Barchetta</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="brougham.jpg" alt="brougham">
+    <div class="car-type-content">
+      <h2>Brougham</h2>
+        <p>Pasażer ma kabinę, kierowca nie. Nie stosowana już konstrukcja z początków motoryzacji</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="tesla_X.jpg" alt="tesla model X">
+    <div class="car-type-content">
+      <h2>Crossover</h2>
+        <p>Albo mniej terenowy suv albo mniejszy SUV np BMW X3 czy Tesla model X.</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="colt-cj0.jpg" alt="colt cj0">
+    <div class="car-type-content">
+      <h2>Hatchback</h2>
+        <p>Samochód 3- lub 5- drzwiowy z drzwiami/ klapą z tyłu np. Mitsubishi Colt czy mini Cooper countryman</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="honda-crz.jpg" alt="honda crz">
+     <div class="car-type-content">
+       <h2>Kammback</h2>
+        <p>Styl nadwozia w którym od połowy długości stopniowo upada ku tyłowi i nagle zostaje ucięty np honda crz czy toyota Prius</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="subaru-sambar.jpg" alt="subaru sambar">
+    <div class="car-type-content">
+      <h2>Kei car</h2>
+        <p>Bardzo małe samochody wszelkiego typu, osobowe, dostawcze czy SUV np. Subaru sambar</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="nissan-stagea.jpg" alt="nissan stagea">
+    <div class="car-type-content">
+      <h2>Kombi</h2>
+        <p>Dłuższa wersja hatchbacka posiadająca 4 słupki zamiast 3 np. Nissan stagea</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="Maybach-g650.jpg" alt="Maybach g650">
+    <div class="car-type-content">
+      <h2>Landaulet</h2>
+        <p>Zdejmowany dach tylko dla pasażerów z tyłu np. Maybach g650</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="mazda-6.jpg" alt="mazda 6">
+     <div class="car-type-content">
+       <h2>Liftback</h2>
+        <p>Przypomina sedana lecz w przeciwieństwie do niego klapa otwiera się razem z szybą, więc stanowi ona dodatkowe "wejście" np mazda 6.</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="nissan-titan.jpg" alt="nissan titan">
+     <div class="car-type-content">
+       <h2>Pick-up</h2>
+        <p>3-drzwiowe nadwozie z paką np. Nissan Titan.</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="Mazda-MX-5-NA.jpg" alt="Mazda MX 5 NA">
+    <div class="car-type-content">
+      <h2>Roadster/spider/Spyder</h2>
+        <p>Kabriolet dwuosobowy np. Mazda MX5/ Toyota MR2 3gen</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="Kia-ProCeed.jpg" alt="Kia ProCeed">
+    <div class="car-type-content">
+      <h2>Shooting brake</h2>
+        <p>Kombi z opadająca linia dachu za słupkiem C np Kia proceed czy Mercedes CLS shooting brake</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="gmc-yukon.jpg" alt="gmc yukon">
+    <div class="car-type-content">
+      <h2>SUV</h2>
+        <p>Bardziej luksusowa wersja samochodów terenowych, o mniejszych możliwościach terenowych  np. Cadillac escalade czy GMC Yukon</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="bmw_x6.jpg" alt="bmw x6">
+    <div class="car-type-content">
+      <h2>SUV coupe</h2>
+        <p>Samochód na zawieszeniu suva aczkolwiek z linią samochodu coupe np BMW X6</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="Porsche-911-targa.jpg" alt="Porsche 911 targa">
+    <div class="car-type-content">
+      <h2>Targa</h2>
+        <p>Zdejmowana część sztywnego dachu np Porsche 911 targ</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="nissan-300ZX.jpg" alt="nissan 300ZX">
+    <div class="car-type-content">
+      <h2>Targa T-top</h2>
+        <p>Zdejmowana część sztywnego dachu, z zostawieniem wąskiego paska dachu np. nissan 300ZX</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="Subaru-brat.jpg" alt="Subaru brat">
+    <div class="car-type-content">
+      <h2>Ute</h2>
+        <p>Osobówka z paką zamiast tylnych foteli i bagażnika np. Ford falcon Ute czy Subaru brat</p>
+    </div>
+</section>
+
+<section class="car-type">
+    <img src="toyota-hiace.jpg" alt="toyota hiace">
+    <div class="car-type-content">
+      <h2>Van</h2>
+        <p>Samochód z przewagą jednej bryły, tzn. brak zmian linii nadwozia np. Toyota hiace</p>
+    </div>
+</section>
+    </main>
+    
+    <!-- Linki źródłowe -->
+    <section class="sources">
+        <h2>Źródła:</h2>
+        <ul>
+            <li><a href="https://youtu.be/3EXpxVY3eGM?si=hbSa0VBcGxmTIJOo">Wheel with it <br> WYJAŚNIAM KAŻDY TYP NADWOZIA</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+          <p>&copy; 2024 Japońska Motoryzacja. Wszelkie prawa zastrzeżone.</p>
+      </footer>
+  </body>
+  </html>
+</body>
+</html>

@@ -1,0 +1,198 @@
+/* Styl ogólny */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1F1D29;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Menu nawigacyjne */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styl rozwijanego menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-checkbox {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+}
+
+.dropdown-content a img {
+    width: 30px; /* Ustaw odpowiednią szerokość loga */
+    height: auto; /* Wysokość jest automatycznie dopasowywana proporcjonalnie do szerokości */
+    margin-right: 8px; /* Odstęp między logo a tekstem */
+}
+
+.dropdown-checkbox:checked + .dropdown-content {
+    display: block;
+}
+
+/* Styl sekcji z typami samochodów */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Styl dla naprzemiennych sekcji */
+.car-type {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.car-type img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.car-type-content {
+    text-align: center;
+}
+
+/* Naprzemienny układ na szerokich ekranach */
+@media (min-width: 768px) {
+    .car-type {
+        flex-direction: row;
+    }
+
+    .car-type img {
+        margin-right: 20px;
+    }
+
+    /* Naprzemienne sekcje */
+    .car-type:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .car-type:nth-child(even) img {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+}
+
+/* Styl responsywny */
+@media (min-width: 768px) {
+    .car-type {
+        flex-direction: row;
+    }
+
+    .car-type img {
+        margin-right: 20px;
+    }
+}
+
+/* Stylizacja źródeł (sources) */
+.sources {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.sources h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sources ul {
+    list-style: none; /* Usuń znaczniki listy (kropki) */
+    display: flex;
+    flex-direction: column; /* Domyślnie linki jeden pod drugim */
+    padding: 0;
+    gap: 15px;
+}
+
+.sources ul li {
+    margin: 15px 0; /* Większy odstęp między linkami */
+}
+
+.sources ul li a {
+    text-decoration: none; /* Usuń podkreślenie z linków */
+    background: #f4f4ff;
+    color: #000000; /* Kolor linków */
+    padding: 10px 20px; /* Dodaj wewnętrzne odstępy dla ramki */
+    border: 2px solid #0073e6; /* Ramka wokół linku */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    display: inline-block; /* Żeby padding i ramka działały */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Płynna animacja */
+    }
+    
+    /* Układ dla większych ekranów */
+@media (min-width: 768px) {
+  .sources ul {
+        flex-direction: row; /* Obok siebie na większych ekranach */
+        justify-content: center; /* Wyśrodkowanie linków */
+    }
+} /* KONIEC RAMKI*/
+
+.sources ul {
+    
+}

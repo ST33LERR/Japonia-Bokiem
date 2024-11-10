@@ -1,0 +1,126 @@
+/* Styl dla podstrony z markami */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+    background-color: #1F1D29; /* Naprawiono brakujące tło */
+    color: #fff;
+    text-align: center; /* Tekst wyśrodkowany */
+    padding: 1.5rem 0;
+}
+
+.logo {
+    width: 100px; /* Dopasuj do odpowiedniego rozmiaru logo */
+    height: auto;
+    margin-right: 15px; /* Odstęp między logo a tekstem */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.brands {
+    padding: 2rem;
+    text-align: center;
+}
+
+.brand-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Domyślnie jedna kolumna */
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Element marki */
+.brand-item {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.brand-item img {
+    max-width: 200px; /* Ograniczamy wielkość loga */
+    border-radius: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.brand-item a {
+    color: #000;
+    text-decoration: none;
+}
+
+.brand-item a:hover {
+    color: #0073e6; /* Kolor linków po najechaniu */
+}
+
+/* Styl dla większych ekranów (np. komputery) */
+@media (min-width: 768px) {
+    .brand-list {
+        grid-template-columns: repeat(2, 1fr); /* Dwie kolumny na średnich ekranach */
+    }
+}
+
+@media (min-width: 1024px) {
+    .brand-list {
+        grid-template-columns: repeat(5, 1fr); /* Pięć kolumn na dużych ekranach */
+    }
+}
+/* Styl dla rozwijanego menu modeli na urządzeniach mobilnych */
+@media (max-width: 768px) {
+    .model-dropdown {
+        position: relative; /* Przesuwa rozwijane menu modeli pod markę */
+        left: 0; /* Ustawienie pozycji względem nadrzędnego elementu */
+        top: 0;
+        margin-top: 10px; /* Odstęp między marką a modelami */
+    }
+
+    /* Opcjonalnie, zmniejszenie szerokości rozwijanego menu */
+    .dropdown-content {
+        min-width: 100%; /* Menu zajmuje pełną szerokość ekranu na mobilnych */
+    }
+
+    .model-dropdown li a {
+        padding: 8px 16px; /* Węższe przyciski w menu dla lepszej czytelności */
+    }
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Główna zawartość */
+main {
+    padding: 2rem;
+}

@@ -1,0 +1,58 @@
+/* Styl dla rozwijanego menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content a img {
+    width: 30px; /* Ustaw odpowiednią szerokość loga */
+    height: auto;
+    margin-right: 8px; /* Odstęp między logo a tekstem */
+}
+
+/* Styl dla rozwijanych marek */
+.brand-dropdown {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.brand-dropdown:hover + .model-dropdown {
+    display: block;
+}
+
+/* Styl dla rozwijanych modeli */
+.model-dropdown {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+  background-color: #fff;
+  /* Możesz zmienić kolor tła */
+}
+
+.model-dropdown li a {
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}

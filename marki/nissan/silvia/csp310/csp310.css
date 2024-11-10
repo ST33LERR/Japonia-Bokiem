@@ -1,0 +1,222 @@
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    color: #2e3b55;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #2e3b55;
+}   
+
+img {
+  max-width: 100%;
+}
+
+
+article {
+    margin-bottom: 40px; 
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+}
+
+table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Stylizacja dla obrazków */
+img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylizacja tabeli */
+table th {
+    background-color: #eaeaea;
+    font-weight: bold;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+    .float-left, .float-right {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Przesunięcie elementów z klasą .dimensions-label w lewo */
+.dimensions-label {
+    margin-left: 10px; /* Wartość dostosuj według potrzeb */
+    display: inline-block;
+}
+
+/* Styl dla zdjęć poniżej tabeli */
+.image-wrapper {
+    margin-bottom: 20px;
+    overflow: auto; /* Pomaga oblać tekst zdjęciem */
+}
+
+.float-left {
+    float: left;
+    width: 60%; /* Ustal szerokość zdjęć po lewej */
+    margin: 10px 20px 10px 0;
+}
+
+.float-right {
+    float: right;
+    width: 60%; /* Ustal szerokość zdjęć po prawej */
+    margin: 10px 0 10px 20px;
+}
+
+/* Stylizacja tekstu obok zdjęcia */
+.image-wrapper p {
+    text-align: justify; /* Tekst oblewający zdjęcie */
+}
+
+/* Stylizacja kontenera na zdjęcie główne i tabelę */
+.main-content {
+    display: flex;
+    flex-direction: column; /* Domyślnie kolumna dla urządzeń mobilnych */
+    align-items: center;
+    gap: 20px;
+    width: 100%; /* Pełna szerokość kontenera */
+}
+
+/* Styl dla głównego zdjęcia */
+.main-photo {
+  width: 100%; /* Maksymalna szerokość dla zdjęcia */
+    height: auto;
+    object-fit: contain; /* Zachowaj proporcje obrazu */
+}
+
+/* Styl dla tabeli */
+.dimension-table {
+    width: 100%;
+    max-width: 400px; /* Maksymalna szerokość tabeli */
+}
+
+
+
+#wazne {
+  color: #ff9900;
+  font: italic 20px serif
+}
+
+/* Stylizacja źródeł (sources) */
+.sources {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.sources h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sources ul {
+    list-style: none; /* Usuń znaczniki listy (kropki) */
+    display: flex;
+    flex-direction: column; /* Domyślnie linki jeden pod drugim */
+    padding: 0;
+    gap: 5px;
+}
+
+.sources ul li {
+    margin: 5px 0; /* Większy odstęp między linkami */
+}
+
+.sources ul li a {
+    text-decoration: none; /* Usuń podkreślenie z linków */
+    background: #f4f4ff;
+    color: #000000; /* Kolor linków */
+    padding: 10px 20px; /* Dodaj wewnętrzne odstępy dla ramki */
+    border: 2px solid #0073e6; /* Ramka wokół linku */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    display: inline-block; /* Żeby padding i ramka działały */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Płynna animacja */
+    }
+
+/* Układ dla większych ekranów */
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Domyślnie kolumna dla całej treści */
+    }
+
+    .photo-table-wrapper {
+        display: flex;
+        flex-direction: row; 
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between; /* Rozsuń elementy, aby zajmowały całą szerokość */
+    }
+
+    .main-photo,
+    .dimension-table {
+    flex-grow: 1; /* Dostosuj elementy do szerokości */
+    max-width:  50%; /* Upewnij się, że zdjęcie i tabela mają max 50% szerokości */
+    }
+    .float-left {
+    float: left;
+    width: 40%; /* Ustal szerokość zdjęć po lewej */
+    margin: 10px 20px 10px 0;
+  }
+
+.float-right {
+    float: right;
+    width: 40%; /* Ustal szerokość zdjęć po prawej */
+    margin: 10px 0 10px 20px;
+  }
+  
+  .sources ul {
+        flex-direction: row; /* Obok siebie na większych ekranach */
+        justify-content: center; /* Wyśrodkowanie linków */
+        gap: 15px;
+    }
+} /* KONIEC RAMKI*/

@@ -1,0 +1,77 @@
+/* Styl dla podstrony z markami */
+body {
+  font-family: Arial, sans-serif, 20px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+    background-color: #222; /* Naprawiono brakujące tło */
+    color: #fff;
+    text-align: center; /* Tekst wyśrodkowany */
+    padding: 1.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.brands {
+    padding: 2rem;
+    text-align: center;
+}
+
+.brand-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Domyślnie jedna kolumna */
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Element marki */
+.brand-item {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.brand-item img {
+    max-width: 200px; /* Ograniczamy wielkość loga */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.brand-item a {
+    color: #000;
+    text-decoration: none;
+}
+
+.brand-item a:hover {
+    color: #0073e6; /* Kolor linków po najechaniu */
+}
+
+/* Styl dla większych ekranów (np. komputery) */
+@media (min-width: 768px) {
+    .brand-list {
+        grid-template-columns: repeat(2, 1fr); /* Dwie kolumny na średnich ekranach */
+    }
+}
+
+@media (min-width: 1024px) {
+    .brand-list {
+        grid-template-columns: repeat(5, 1fr); /* Pięć kolumn na dużych ekranach */
+    }
+}

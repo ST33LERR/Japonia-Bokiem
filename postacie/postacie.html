@@ -1,0 +1,146 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ważne postacie</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/tabela.js" defer></script> <!-- Dodanie linku do pliku JavaScript -->
+</head>
+<body>
+    <header>
+      <img src="/logo.webp" alt="Logo Japonia bokiem" class="logo">
+      <h1>JAPONIA BOKIEM</h1>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Strona Główna</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Marki Samochodów</a>
+            <div class="dropdown-content">
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Daihatsu')"><img src="/images/daihatsu-logo.jpg" alt="Daihatsu">Daihatsu</a>
+              <ul class="model-dropdown" id="Daihatsu">
+                <li><a href="brands.html#Daihatsu"><img src="/images/daihatsu-logo.jpg" alt="Daihatsu">Daihatsu Model 1</a></li>
+                <li><a href="brands.html#Daihatsu">Daihatsu Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Honda')"><img src="/images/honda-logo.jpg" alt="Honda">Honda</a>
+              <ul class="model-dropdown" id="Honda">
+                <li><a href="brands.html#Honda">Honda Model 1</a></li>
+                <li><a href="brands.html#Honda">Honda Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Mazda')"><img src="/images/mazda-logo.jpg" alt="Mazda">Mazda</a>
+              <ul class="model-dropdown" id="Mazda">
+                <li><a href="brands.html#Mazda">Mazda Model 1</a></li>
+                <li><a href="brands.html#Mazda">Mazda Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Mitsubishi')"><img src="/images/mitsubishi-logo.jpg" alt="Mitsubishi">Mitsubishi</a>
+              <ul class="model-dropdown" id="Mitsubishi">
+                <li><a href="brands.html#Mitsubishi">Mitsubishi Model 1</a></li>
+                <li><a href="brands.html#Mitsubishi">Mitsubishi Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Nissan')"><img src="/images/nissan-logo.jpg" alt="Nissan">Nissan</a>
+              <ul class="model-dropdown" id="Nissan">
+                <li><a href="/marki/nissan/silvia/silvia.html#Nissan"><img src="/marki/nissan/nissan_logos/silvia-logo.jpg" alt="Silvia logo">Silvia</a></li>
+                <li><a href="brand.html#Nissan"><img src="/marki/nissan/nissan_logos/gt-r-logo.jpg" alt="GTR logo">GT-R</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Suzuki')"><img src="/images/suzuki-logo.jpg" alt="Suzuki">Suzuki</a>
+              <ul class="model-dropdown" id="Suzuki">
+                <li><a href="brands.html#Suzuki">Suzuki Model 1</a></li>
+                <li><a href="brands.html#Suzuki">Suzuki Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Subaru')"><img src="/images/subaru-logo.jpg" alt="Subaru">Subaru</a>
+              <ul class="model-dropdown" id="Subaru">
+                <li><a href="brands.html#Subaru">Subaru Model 1</a></li>
+                <li><a href="brands.html#Subaru">Subaru Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Toyota')"><img src="/images/toyota-logo.jpg" alt="Toyota">Toyota</a>
+              <ul class="model-dropdown" id="Toyota">
+                <li><a href="brands.html#Toyota">Toyota Model 1</a></li>
+                <li><a href="brands.html#Toyota">Toyota Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Lexus')"><img src="/images/lexus-logo.jpg" alt="Lexus">Lexus</a>
+              <ul class="model-dropdown" id="Lexus">
+                <li><a href="brands.html#Lexus">Lexus Model 1</a></li>
+                <li><a href="brands.html#Lexus">Lexus Model 2</a></li>
+              </ul>
+              <a href="#" class="brand-dropdown" onclick="toggleModelDropdown(event, 'Infiniti')"><img src="/images/infiniti-logo.jpg" alt="Infiniti">Infiniti</a>
+              <ul class="model-dropdown" id="Infiniti">
+                <li><a href="brands.html#Infiniti">Infiniti Model 1</a></li>
+                <li><a href="brands.html#Infiniti">Infiniti Model 2</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+<main>
+  <section class="section brands">
+  <div class="posts">
+    <article class="post">
+        <img src="/marki/nissan/silvia/csp310/CSP310.jpg" alt="Nissan Silvia CSP310" class="model-photo">
+        <div class="post-content">
+          <h3>CSP 310</h3>
+        <p>Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne... Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne...</p>
+        <a href="/marki/nissan/silvia/csp310/csp310.html" class="read-more">Czytaj więcej</a>
+    </article>
+  </div>
+  <div class="posts">
+    <article class="post">
+      <img src="/marki/nissan/silvia/csp310/CSP310.jpg" alt="Nissan Silvia CSP310" class="model-photo">
+      <div class="post-content">
+        <h3>CSP 310</h3>
+        <p>Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne... Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne...</p>
+        <a href="/marki/nissan/silvia/csp310/csp310.html" class="read-more">Czytaj więcej</a>
+    </article>
+  </div>
+  <div class="posts">
+    <article class="post">
+      <img src="/marki/nissan/silvia/csp310/CSP310.jpg" alt="Nissan Silvia CSP310" class="model-photo">
+      <div class="post-content">
+        <h3>CSP 310</h3>
+        <p>Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne... Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne...</p>
+        <a href="/marki/nissan/silvia/csp310/csp310.html" class="read-more">Czytaj więcej</a>
+    </article>
+  </div>
+  <div class="posts">
+    <article class="post">
+      <img src="/marki/nissan/silvia/csp310/CSP310.jpg" alt="Nissan Silvia CSP310" class="model-photo">
+      <div class="post-content">
+        <h3>CSP 310</h3>
+        <p>Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne... Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne...</p>
+        <a href="/marki/nissan/silvia/csp310/csp310.html" class="read-more">Czytaj więcej</a>
+    </article>
+  </div>
+  <div class="posts">
+    <article class="post">
+      <img src="/marki/nissan/silvia/csp310/CSP310.jpg" alt="Nissan Silvia CSP310" class="model-photo">
+      <div class="post-content">
+        <h3>CSP 310</h3>
+        <p>Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne... Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne...</p>
+        <a href="/marki/nissan/silvia/csp310/csp310.html" class="read-more">Czytaj więcej</a>
+    </article>
+  </div>
+  <div class="posts">
+    <article class="post">
+      <img src="/marki/nissan/silvia/csp310/CSP310.jpg" alt="Nissan Silvia CSP310" class="model-photo">
+      <div class="post-content">
+        <h3>CSP 310</h3>
+        <p>Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne... Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne...</p>
+        <a href="/marki/nissan/silvia/csp310/csp310.html" class="read-more">Czytaj więcej</a>
+    </article>
+  </div>
+  <div class="posts">
+    <article class="post">
+      <img src="/marki/nissan/silvia/csp310/CSP310.jpg" alt="Nissan Silvia CSP310" class="model-photo">
+      <div class="post-content">
+        <h3>CSP 310</h3>
+        <p>Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne... Przeczytaj o tym, jak Toyota rozwija swoje technologie elektryczne i autonomiczne...</p>
+        <a href="/marki/nissan/silvia/csp310/csp310.html" class="read-more">Czytaj więcej</a>
+    </article>
+  </div>
+  </section>
+  </main>
+    <footer>
+        <p>&copy; 2024 Japońska Motoryzacja. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
