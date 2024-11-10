@@ -200,17 +200,17 @@ table th {
     .main-photo,
     .dimension-table {
     flex-grow: 1; /* Dostosuj elementy do szerokości */
-    max-width:  50%; /* Upewnij się, że zdjęcie i tabela mają max 50% szerokości */
+    max-width:  30%; /* Upewnij się, że zdjęcie i tabela mają max 50% szerokości */
     }
     .float-left {
     float: left;
-    width: 40%; /* Ustal szerokość zdjęć po lewej */
+    width: 20%; /* Ustal szerokość zdjęć po lewej */
     margin: 10px 20px 10px 0;
   }
 
 .float-right {
     float: right;
-    width: 40%; /* Ustal szerokość zdjęć po prawej */
+    width: 20%; /* Ustal szerokość zdjęć po prawej */
     margin: 10px 0 10px 20px;
   }
   
